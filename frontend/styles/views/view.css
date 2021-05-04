@@ -1,0 +1,50 @@
+.view-form {
+  display: block;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 560px) {
+  #editor-layout {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-wrapper {
+    flex-grow: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 559px) {
+  #editor-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    flex: 1 1 244.656px;
+  }
+}
+
+#editor {
+  padding: var(--lumo-space-l);
+  flex-grow: 1;
+}
+
+#button-layout {
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--lumo-contrast-5pct);
+  padding: var(--lumo-space-s) var(--lumo-space-l);
+}
